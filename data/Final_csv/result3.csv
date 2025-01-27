@@ -1,4 +1,4 @@
-Year,Sport,Event,Host,NOC,Gold,Silver,Bronze,Medal,Total
+Year,sport,event,host,country,gold,silver,bronze,medal,Total
 1896,Tennis,Tennis_Men's_Doubles,0,AUS,0,0,1,Bronze,1
 1896,Tennis,Tennis_Men's_Doubles,0,GBR,1,0,1,Bronze,2
 1896,Cycling,Cycling_Men's_333_metres_Time_Trial,0,AUT,0,0,1,Bronze,1
