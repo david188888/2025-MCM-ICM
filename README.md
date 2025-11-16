@@ -8,14 +8,14 @@
  Moreover, we estimate the probabilities of each outcome along with the confidence intervals for the
  predictions.
 - For Task 2, we quantified the relationship between the number or type of events and medal out
-comes using a panel regression model. Next, we employed the dynamic Herfindahl-Hirschman In
-dex (HHI) to quantify the significance of specific events to the countries involved and identified the
+ comes using a panel regression model. Next, we employed the dynamic Herfindahl-Hirschman In
+ dex (HHI) to quantify the significance of specific events to the countries involved and identified the
  core global events that have the most widespread impact. Finally, a Difference-in-Differences (DID)
  model was used to estimate the effects of hosting country status and the number of events on medal
  outcomes.
 - For Task3, weproposedanARIMAX-XGBoosthybridresidualregressionmodel. Thisapproach
  combines linear time series modeling with nonlinear feature learning to predict Olympic medal distri
-butions. We innovatively constructed an exogenous variable prediction mechanism using a sliding
+ butions. We innovatively constructed an exogenous variable prediction mechanism using a sliding
  window to address the data gap caused by the four-year Olympic cycle. The model’s robustness was
  enhanced through a dual regularization framework, and dynamic confidence intervals were constructed
  by using Bootstrap resampling.
@@ -25,3 +25,5 @@ butions. We innovatively constructed an exogenous variable prediction mechanism 
  into the model and applied a Likelihood Ratio Test (LRT) to compare the performance of the model
  with and without the ”Great Coach” variable.
 
+### Awards
+- 荣获 H 奖 (Honorable Mention) — 2025 MCM/ICM
