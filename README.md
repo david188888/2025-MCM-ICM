@@ -1,29 +1,22 @@
-# 2025-MCM/ICM competition (Problem C: Olympic medal table model)
+# 2025 MCM/ICM — Problem C: Olympic Medal Table Model
 
-### Our solution
-- For Task 1, we developed a Zero-Inflated Negative Binomial Model. This model utilizes a
- logistic regression-based zero-inflation mechanism, coupled with a short-term dynamic feature-driven
- negative binomial count distribution. By integrating Monte Carlo simulations and adaptive adjustment
- strategies, we predict and differentiate countries that have never won a medal from those that have.
- Moreover, we estimate the probabilities of each outcome along with the confidence intervals for the
- predictions.
-- For Task 2, we quantified the relationship between the number or type of events and medal out
- comes using a panel regression model. Next, we employed the dynamic Herfindahl-Hirschman In
- dex (HHI) to quantify the significance of specific events to the countries involved and identified the
- core global events that have the most widespread impact. Finally, a Difference-in-Differences (DID)
- model was used to estimate the effects of hosting country status and the number of events on medal
- outcomes.
-- For Task3, weproposedanARIMAX-XGBoosthybridresidualregressionmodel. Thisapproach
- combines linear time series modeling with nonlinear feature learning to predict Olympic medal distri
- butions. We innovatively constructed an exogenous variable prediction mechanism using a sliding
- window to address the data gap caused by the four-year Olympic cycle. The model’s robustness was
- enhanced through a dual regularization framework, and dynamic confidence intervals were constructed
- by using Bootstrap resampling.
-- For Task 4, we began by defining events that could potentially produce a ”Great Coach” effect.
- Wethen employed a mixed-effects model to quantify the impact of this effect. Initially, we established
- a baseline model excluding the ”Great Coach” variable. We then introduced the ”Great Coach” effect
- into the model and applied a Likelihood Ratio Test (LRT) to compare the performance of the model
- with and without the ”Great Coach” variable.
+## Overview
+This repository contains code and written solutions for the 2025 Mathematical Contest in Modeling (MCM) / Interdisciplinary Contest in Modeling (ICM), Problem C: modeling Olympic medal distributions and related analyses.
 
-### Awards
-- 荣获 H 奖 (Honorable Mention) — 2025 MCM/ICM
+## Our Approach
+
+### Task 1 — Zero‑Inflated Count Model
+We developed a Zero‑Inflated Negative Binomial model with a logistic regression-based zero‑inflation component and a dynamic feature-driven negative binomial count distribution. Monte Carlo simulations and adaptive adjustment strategies were used to separate countries that have never won medals from those that have, and to estimate outcome probabilities with confidence intervals.
+
+### Task 2 — Panel Regression & HHI
+We quantified the relationship between the number/type of events and medal outcomes using panel regression. A dynamic Herfindahl‑Hirschman Index (HHI) was applied to measure event concentration and to identify core events with broad global impact. A Difference‑in‑Differences (DID) model was used to estimate the effects of host‑country status and event counts on medal outcomes.
+
+### Task 3 — ARIMAX + XGBoost Hybrid
+We propose an ARIMAX–XGBoost hybrid residual regression model that combines linear time‑series modeling with nonlinear feature learning to predict medal distributions. An exogenous variable prediction mechanism based on a sliding window handles the four‑year Olympic cycle data gap. Robustness is enhanced through dual regularization and bootstrap resampling is used to produce dynamic confidence intervals.
+
+### Task 4 — "Great Coach" Mixed‑Effects Analysis
+We defined candidate events likely to generate a "Great Coach" effect and used mixed‑effects modeling to quantify this impact. A baseline model (without the "Great Coach" variable) was compared to an extended model including the effect, and a Likelihood Ratio Test (LRT) was used to assess statistical significance.
+
+
+## Awards
+- Honorable Mention (H Award) — 2025 MCM/ICM
